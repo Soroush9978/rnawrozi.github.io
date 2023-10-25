@@ -55,7 +55,7 @@ jobs:
       - name: Run Pydoc-Markdown
         run: pydoc-markdown --help
       - name: use pydoc
-        run: pydoc-markdon -I ./repsit01
+        run: pydoc-markdown -I ./repsit01
       
       
 
