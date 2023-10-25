@@ -54,6 +54,9 @@ jobs:
         run: pip install pydoc-markdown
       - name: Run Pydoc-Markdown
         run: pydoc-markdown --help
+      - name: use pydoc
+        run: pydoc-markdon -I ./repsit01
+      
       
 
       
