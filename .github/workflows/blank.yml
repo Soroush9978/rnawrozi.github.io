@@ -62,7 +62,7 @@ jobs:
         with:
           node-version: 18
       - name: Change Directory
-        working-directory: ./repsit01   
+        working-directory: /repsit01   
         run: npm install
 
   
