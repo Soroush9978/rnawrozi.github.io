@@ -67,6 +67,7 @@ jobs:
           cd ./reposit01/docs
           ls -ltrh
           npm install
+          npm run build
   
     
       
