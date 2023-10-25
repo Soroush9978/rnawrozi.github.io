@@ -49,7 +49,7 @@ jobs:
       - name: install python
         uses: actions/setup-python@v2
         with:
-          python-version: 3.10.0  # Choose the Python version you need
+          python-version: 3.11.0  # Choose the Python version you need
       - name: Install Pydoc-Markdown
         run: pip install pydoc-markdown
       - name: Run Pydoc-Markdown
