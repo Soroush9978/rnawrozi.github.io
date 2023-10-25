@@ -43,6 +43,9 @@ jobs:
       - name: Say something
         run: |
          ls -ltrh ./reposit01 > content.txt
+      - name: Say something
+        run: |
+          cat directory_contents.txt      
          
         
 
