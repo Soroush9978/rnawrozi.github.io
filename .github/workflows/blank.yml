@@ -52,8 +52,7 @@ jobs:
           python-version: 3.12.0  # Choose the Python version you need
       - name: Install Pydoc-Markdown
         run: pip install pydoc-markdown
-      - name: Run Pydoc-Markdown
-        run: pydoc-markdown -o docs/ ./reposit01
+      
 
       
           
