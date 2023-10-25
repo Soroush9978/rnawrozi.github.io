@@ -62,7 +62,6 @@ jobs:
         with:
           node-version: 18
       - name: Change Directory
-        working-directory: ./repsit01
         run: |
           node -v
           ls -ltrh
