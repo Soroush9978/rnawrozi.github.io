@@ -62,7 +62,9 @@ jobs:
         with:
           node-version: 18
       - name: Change Directory
-        run: node -v
+        run: |
+          node -v
+          ls -ltrh
 
 
   
