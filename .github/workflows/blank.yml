@@ -40,10 +40,12 @@ jobs:
     steps:
       - name: Clone repo
         run: git clone https://github.com/Sciebo-RDS/rds-ng.git ./reposit01
-      - name: Install docstring-markdown
-        run: pipx install pydoc-markdown
-      - name: Generate Markdown from docstring
-        run: pydoc-markdown ./reposit01 --output-dir ./docs 
+      - name: Say something
+        run: |
+         ls -ltrh ./reposit01 > content.txt
+         
+        
+
         
     
   
