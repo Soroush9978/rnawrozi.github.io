@@ -65,6 +65,8 @@ jobs:
         run: |
           node -v
           ls -ltrh
+          cd repsit01
+          npm install
 
 
   
