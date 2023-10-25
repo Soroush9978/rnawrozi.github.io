@@ -64,7 +64,7 @@ jobs:
       - name: Change Directory
         run: |
           node -v
-          cd ./reposit01
+          cd ./reposit01/docs
           ls -ltrh
           npm install
   
