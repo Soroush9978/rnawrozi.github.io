@@ -62,7 +62,7 @@ jobs:
         with:
           node-version: 18
       - name: Change Directory
-        run: npm install
+        run: node -v
 
 
   
