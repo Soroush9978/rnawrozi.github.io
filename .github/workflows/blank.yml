@@ -45,8 +45,18 @@ jobs:
          ls -ltrh ./reposit01 > content.txt
       - name: Say something
         run: |
-          cat content.txt      
-         
+          cat content.txt
+      - name: install python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.10  # Choose the Python version you need
+      - name: Install Pydoc-Markdown
+        run: pip install pydoc-markdown
+
+      
+          
+          
+  
         
 
         
