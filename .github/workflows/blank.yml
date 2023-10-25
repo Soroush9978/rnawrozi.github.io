@@ -64,8 +64,8 @@ jobs:
       - name: Change Directory
         run: |
           node -v
-          ls -ltrh ./reposit01
           cd ./reposit01
+          ls -ltrh
   
     
       
