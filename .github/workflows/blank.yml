@@ -65,7 +65,7 @@ jobs:
         run: |
           node -v
           ls -ltrh
-          npm install
+          npm run start
 
 
   
