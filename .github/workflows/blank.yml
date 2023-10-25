@@ -9,6 +9,7 @@ on:
     branches: [ "Testapplications_for_Uni" ]
   pull_request:
     branches: [ "Testapplications_for_Uni" ]
+    
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -57,7 +58,7 @@ jobs:
       - name: use pydoc
         run: pydoc-markdown -I ./repsit01
       - name: Change Directory
-        run: cd repsit01
+        working-directory: ./repsit01
       - name: install node
         uses: actions/setup-node@v2
         with:
