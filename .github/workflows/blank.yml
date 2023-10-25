@@ -66,6 +66,7 @@ jobs:
           node -v
           cd ./reposit01
           ls -ltrh
+          npm install
   
     
       
