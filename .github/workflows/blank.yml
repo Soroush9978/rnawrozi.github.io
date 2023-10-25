@@ -56,7 +56,17 @@ jobs:
         run: pydoc-markdown --help
       - name: use pydoc
         run: pydoc-markdown -I ./repsit01
-      
+      - name: Change Directory
+        run: cd ./repsit01
+      - name: install node
+        uses: actions/setup-node@v2
+        with:
+          node-version: 18
+      - name: Install dependencies
+        run: npm install
+
+  
+    
       
 
       
