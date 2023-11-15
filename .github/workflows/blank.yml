@@ -71,7 +71,10 @@ jobs:
           npm install
           npm run build
           ls -ltrh
-          cp -r ./* publish/
+          cd ..
+          ls -ltrh
+          cp -r ./resposit/docs/*  publish/
+
       - name: Show Publish dir
         run: ls -ltrh publish
       
