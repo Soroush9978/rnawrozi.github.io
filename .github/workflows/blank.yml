@@ -10,10 +10,9 @@ on:
   pull_request:
     branches: [ "Testapplications_for_Uni" ]
     
-
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
+permissions:
+    contents: write
+    
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
@@ -61,23 +60,15 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: 18
-      - name: create directory
-        run: mkdir -p publish
+          cache: npm
+          
       - name: Change Directory
         run: |
           node -v
           cd ./reposit01/docs
           ls -ltrh
-          npm install
+          npm ci
           npm run build
-          git init
-          git status
-          git remote -v
-          git config user.name "Soroush9978"
-          git config user.email "soroush.pasandideh@uni-muenster.de"
-          git add .
-          git commit -m "Publish to GitHub Pages"
-          git status
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
