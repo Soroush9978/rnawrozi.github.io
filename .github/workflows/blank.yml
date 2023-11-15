@@ -84,7 +84,7 @@ jobs:
           git add .
           git commit -m "Publish to GitHub Pages"
           git remote add Testapplications_for_Uni  https://github.com/Soroush9978/rnawrozi.github.io/tree/Testapplications_for_Uni
-          git push --set-upstream Testapplications_for_Uni master
+          git push https://github.com/Soroush9978/rnawrozi.github.io.git
       
           
  
