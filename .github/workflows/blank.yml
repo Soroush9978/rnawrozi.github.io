@@ -6,9 +6,9 @@ name: Clone Repository and Markdown
 on:
   # Triggers the workflow on push or pull request events but only for the "Testapplications_for_Uni" branch
   push:
-    branches: [ "Testapplications_for_Uni" ]
+    branches: [ "develop" ]
   pull_request:
-    branches: [ "Testapplications_for_Uni" ]
+    branches: [ "develop" ]
     
 
   # Allows you to run this workflow manually from the Actions tab
@@ -40,7 +40,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Clone repo
-        run: git clone https://github.com/Sciebo-RDS/rds-ng.git ./reposit01
+        run: git clone https://github.com/Soroush9978/rds-ng ./reposit01
       - name: Say something
         run: |
          ls -ltrh ./reposit01 > content.txt
