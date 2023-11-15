@@ -6,9 +6,9 @@ name: Clone Repository and Markdown
 on:
   # Triggers the workflow on push or pull request events but only for the "Testapplications_for_Uni" branch
   push:
-    branches: [ "develop" ]
+    branches: [ "Testapplications_for_Uni" ]
   pull_request:
-    branches: [ "develop" ]
+    branches: [ "Testapplications_for_Uni" ]
     
 
   # Allows you to run this workflow manually from the Actions tab
