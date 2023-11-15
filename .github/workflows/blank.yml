@@ -4,7 +4,7 @@ name: Clone Reepository and Markdown
 
 # Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the "Testapplications_for_Uni" brajjjnch
+  # Triggers the workflow on push or pull request events but only for the "Testapplications_for_Ufni" brajjjnch
   push:
     branches: [ "Testapplications_for_Uni" ]
   pull_request:
