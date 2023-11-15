@@ -83,10 +83,9 @@ jobs:
           git config user.email "soroush.pasandideh@uni-muenster.de"
           git add .
           git commit -m "Publish to GitHub Pages"
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          git push origin Testapplications_for_Uni
+
+    
           
       
           
