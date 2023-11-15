@@ -68,10 +68,7 @@ jobs:
           node -v
           cd ./reposit01/docs
           ls -ltrh
-          npm install
-          npm run build
-          ls -ltrh
-          git remote add Testapplications_for_Uni https://github.com/Soroush9978/rnawrozi.github.io
+          git remote add Testapplications_for_Uni https://github.com/Soroush9978/rnawrozi.github.io/tree/Testapplications_for_Uni
           git init
           git config user.name "Soroush9978"
           git config user.email "soroush.pasandideh@uni-muenster.de"
