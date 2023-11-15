@@ -71,12 +71,13 @@ jobs:
           npm install
           npm run build
           ls -ltrh
+          git remote add myrepo https://github.com/Soroush9978/rnawrozi.github.io
           git init
           git config user.name "Soroush9978"
           git config user.email "soroush.pasandideh@uni-muenster.de"
           git add .
           git commit -m "Publish to GitHub Pages"
-          git push
+          git push myrepo
           
       
           
