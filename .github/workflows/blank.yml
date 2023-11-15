@@ -70,7 +70,10 @@ jobs:
           ls -ltrh
           npm install
           npm run build
+          git remote add origin https://github.com/Soroush9978/rnawrozi.github.io
           git init
+          git status
+          git remote -v
           git config user.name "Soroush9978"
           git config user.email "soroush.pasandideh@uni-muenster.de"
           git add .
