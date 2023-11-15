@@ -77,7 +77,8 @@ jobs:
           git config user.email "soroush.pasandideh@uni-muenster.de"
           git add .
           git commit -m "Publish to GitHub Pages"
-          git push myrepo
+          git push --set-upstream myrepo master
+
           
       
           
