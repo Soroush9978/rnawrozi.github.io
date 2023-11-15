@@ -83,8 +83,11 @@ jobs:
           git config user.email "soroush.pasandideh@uni-muenster.de"
           git add .
           git commit -m "Publish to GitHub Pages"
-          git remote add Testapplications_for_Uni  https://github.com/Soroush9978/rnawrozi.github.io/tree/Testapplications_for_Uni
-          git push https://github.com/Soroush9978/rnawrozi.github.io.git
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          
       
           
  
