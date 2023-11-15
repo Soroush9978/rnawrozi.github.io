@@ -71,13 +71,6 @@ jobs:
           npm install
           npm run build
           ls -ltrh
-          
-
-      - name: Show Publish dir
-        run: ls -ltrh publish
-      - name: Commit and push to GitHub Pages
-        run: |
-          cd ./reposit01/docs
           git init
           git config user.name "Soroush9978"
           git config user.email "soroush.pasandideh@uni-muenster.de"
