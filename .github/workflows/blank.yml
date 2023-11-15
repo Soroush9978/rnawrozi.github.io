@@ -70,7 +70,6 @@ jobs:
           ls -ltrh
           npm install
           npm run build
-          git remote add origin https://github.com/Soroush9978/rnawrozi.github.io
           git init
           git status
           git remote -v
